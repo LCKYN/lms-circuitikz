@@ -1,0 +1,83 @@
+\documentclass[preview]{standalone}
+\usepackage[usenames]{color} %used for font color
+\usepackage[rgb]{xcolor}
+\usepackage{amssymb} %maths
+\usepackage{amsmath} %maths
+\usepackage[utf8]{inputenc} %useful to type directly diacritic characters
+\usepackage{tikz}
+\usepackage{circuitikz}
+\usetikzlibrary{arrows}
+
+\makeatletter
+\ctikzset{current arrow color/.initial=black}% create key
+
+\let\old@circ@drawcurrent=\pgf@circ@drawcurrent
+\def\pgf@circ@drawcurrent{\old@circ@drawcurrent}
+
+\pgfdeclareshape{currarrow}{
+\anchor{center}{
+\pgfpointorigin
+}
+\anchor{tip}{
+\pgfpointorigin
+    \pgf@circ@res@step = \pgf@circ@Rlen
+        \divide \pgf@circ@res@step by 16
+\pgf@x  =\pgf@circ@res@step
+}
+\behindforegroundpath{      
+
+\pgfscope
+    \pgf@circ@res@step = \pgf@circ@Rlen
+    \divide \pgf@circ@res@step by 16
+
+    \pgfpathmoveto{\pgfpoint{-.7\pgf@circ@res@step}{0pt}}
+    \pgfpathlineto{\pgfpoint{-.7\pgf@circ@res@step}{-.8\pgf@circ@res@step}}
+    \pgfpathlineto{\pgfpoint{1\pgf@circ@res@step}{0pt}}
+    \pgfpathlineto{\pgfpoint{-.7\pgf@circ@res@step}{.8\pgf@circ@res@step}}
+    \pgfpathlineto{\pgfpoint{-.7\pgf@circ@res@step}{0pt}}           
+    \pgfsetcolor{\pgfkeysvalueof{/tikz/circuitikz/current arrow color}}
+    \pgfusepath{draw,fill}
+
+\endpgfscope
+}
+}
+\pgfdeclareshape{flowarrow}{
+    \anchor{center}{\pgfpointorigin}
+    \anchor{tip}{
+    \pgfpointorigin
+        \pgf@circ@res@step = \pgf@circ@Rlen
+            \divide \pgf@circ@res@step by 16
+    \pgf@x  =\pgf@circ@res@step
+    }
+\behindforegroundpath{
+    \pgfscope
+        \pgf@circ@res@step = \pgf@circ@Rlen
+        \divide \pgf@circ@res@step by 4
+        \pgfpathmoveto{\pgfpoint{-\pgf@circ@res@step}{0pt}}
+        \pgfpathlineto{\pgfpoint{\pgf@circ@res@step}{0pt}}
+        %\pgfsetcolor{\pgfkeysvalueof{/tikz/circuitikz/color}}
+  \pgfsetcolor{\pgfkeysvalueof{/tikz/circuitikz/current arrow color}}
+        \pgfusepath{draw}
+        \pgftransformshift{\pgfpoint{\pgf@circ@res@step}{0pt}}
+        \pgfnode{currarrow}{tip}{}{}{\pgfusepath{fill}}
+    \endpgfscope
+}
+}
+\makeatother
+
+\tikzset{voltage dir=RP}
+\tikzstyle{every node}=[font=\Large]
+
+\ctikzset{label/align = straight}
+\ctikzset{current arrow color/.initial=black}
+\begin{document}
+\begin{circuitikz}[american voltages]
+    \ctikzset{label/align = straight}
+    \tikzstyle{every node}=[font=\Large]
+        \draw (-2,4) to[american current source, l=$I_{S1}$, *-*] (2,4) to[R, l_=$R_4$, -] ++(0,-4) to[short, *-*] (0,0) node[ground]{};
+        \draw (0,0) to[short] (-4,0) to[R=$R_1$] ++(0,4) to[short] (-2,4) to[R,l_=$R_2$,-*] ++(0,-4);
+        \draw (2,0) to[short] (4,0) to[american current source, l=$I_{S2}$] (4,4) to[short] ++(-2,0) to[short] ++(0,2) to[R,l_=$R_3$] ++(-4,0) to[short] ++(0,-2);
+        \node[color=purple]at (2.35,4.35) (v2){$v_2$};
+        \node[color=purple] at (-2.35,4.35) (v1){$v_1$};
+\end{circuitikz}
+\end{document}
