@@ -1,4 +1,4 @@
-\documentclass[preview]{standalone}
+\documentclass{standalone}
 \usepackage[usenames]{color} %used for font color
 \usepackage[rgb]{xcolor}
 \usepackage{amssymb} %maths
@@ -70,19 +70,40 @@
 
 \ctikzset{label/align = straight}
 \ctikzset{current arrow color/.initial=black}
+
+% \newcommand*{\xMin}{-1}%
+% \newcommand*{\xMax}{7}%
+% \newcommand*{\yMin}{-1}%
+% \newcommand*{\yMax}{7}%
+
 \begin{document}
 \begin{circuitikz}[american voltages]
-    \ctikzset{label/align = straight}
-    \tikzstyle{every node}=[font=\Large]
-        \draw(0,0)  to[short] ++(0,5);
-        \draw (0,0) to[american current source,l=$I_{S1}$] ++(0,5);
-        \draw[circuitikz/current arrow color=purple](3,0)  to[R, l=$R_1$, f_<=$\color{purple}{i_1}$] ++(0,5);
-        \draw[circuitikz/current arrow color=purple](6,0)  to[R, l=$R_2$, f_<=$\color{purple}{i_2}$] ++(0,5);
-        \draw[circuitikz/current arrow color=purple](11,0) to[R, l=$R_3$, f_<=$\color{purple}{i_3}$] ++(0,5);
-        \draw[circuitikz/current arrow color=purple](14,0) to[R, l=$R_4$, f_<=$\color{purple}{i_4}$] ++(0,5);
-        \draw (17,0) to[american current source,l=$I_{S3}$] ++(0,5);
-        \draw (0,0) to[short,-*] ++(3,0) to[short,-*] ++(3,0) to[short,-*] ++(5,0) to[short,-*] ++(3,0) to[short,-] ++(3,0);
-        \draw (17,5) to[short,-*] ++(-3,0) to[short,-*] ++(-3,0) to[american current source,l=$I_{S2}$,-*] ++(-5,0) to[short,-*] ++(-3,0) to[short,-] ++(-3,0);
-        \draw(17,0) to[short] ++(0,5);
+    % \foreach \i in {\xMin,...,\xMax} {
+    %     \draw [very thin,gray] (\i,\yMin) -- (\i,\yMax)  node [below] at (\i,\yMin) {$\i$};
+    % }
+    % \foreach \i in {\yMin,...,\yMax} {
+    %     \draw [very thin,gray] (\xMin,\i) -- (\xMax,\i) node [left] at (\xMin,\i) {$\i$};
+    % }
+
+    \draw(0,0)  to[short] ++(0,5);
+    \draw (0,0) to[american current source,l=$I_{S1}$] ++(0,5);
+    \draw (17,0) to[american current source,l=$I_{S3}$] ++(0,5);
+    \draw (0,0) to[short,-*] ++(3,0) to[short,-*] ++(3,0) to[short,-*] ++(5,0) to[short,-*] ++(3,0) to[short,-] ++(3,0);
+    \draw (17,5) to[short,-*] ++(-3,0) to[short,-*] ++(-3,0) to[american current source,l_=$I_{S2}$,-*] ++(-5,0) to[short,-*] ++(-3,0) to[short,-] ++(-3,0);
+    \draw(17,0) to[short] ++(0,5);
+
+    % find
+
+    \draw[circuitikz/current arrow color=purple](3,0)  to[R, l=$R_1$, f_<=$\color{purple}{i_1}$] ++(0,5);
+    \draw[circuitikz/current arrow color=purple](6,0)  to[R, l=$R_2$, f_<=$\color{purple}{i_2}$] ++(0,5);
+    \draw[circuitikz/current arrow color=purple](11,0) to[R, l=$R_3$, f_<=$\color{purple}{i_3}$] ++(0,5);
+    \draw[circuitikz/current arrow color=purple](14,0) to[R, l=$R_4$, f_<=$\color{purple}{i_4}$] ++(0,5);
+    % \draw(0,3) node[circ, color=purple]{} node[anchor=south west,color=purple] {$v_1$};
+
 \end{circuitikz}
+
+% \begin{circuitikz}
+%     \draw(0,0) node[circ, color=purple]{} node[anchor=south west,color=purple] {2};
+% \end{circuitikz}
+
 \end{document}
