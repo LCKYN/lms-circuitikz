@@ -1,5 +1,5 @@
 <?xml version="1.0" encoding="UTF-8"?>
-<svg xmlns="http://www.w3.org/2000/svg" xmlns:xlink="http://www.w3.org/1999/xlink" width="230.687pt" height="187.034pt" viewBox="0 0 230.687 187.034" version="1.1">
+<svg xmlns="http://www.w3.org/2000/svg" xmlns:xlink="http://www.w3.org/1999/xlink" width="216.383pt" height="187.034pt" viewBox="0 0 216.383 187.034" version="1.1">
 <defs>
 <g>
 <symbol overflow="visible" id="glyph0-0">
@@ -93,10 +93,10 @@
 <path style="fill:none;stroke-width:0.3985;stroke-linecap:butt;stroke-linejoin:miter;stroke:rgb(0%,0%,0%);stroke-opacity:1;stroke-miterlimit:10;" d="M 170.079 170.080031 L 170.079 169.880812 M 170.079 170.080031 L 170.079 143.4355 M 170.079 111.6855 L 170.079 85.040969 M 170.079 111.6855 L 170.079 85.040969 M 170.079 85.240187 L 170.079 84.84175 M 170.079 85.040969 L 170.079 42.521437 M 170.079 42.521437 L 170.079 0.00190625 M 170.079 0.201125 L 170.079 0.00190625 " transform="matrix(1,0,0,-1,34.671,185.248)"/>
 <path style="fill:none;stroke-width:0.797;stroke-linecap:butt;stroke-linejoin:bevel;stroke:rgb(0%,0%,0%);stroke-opacity:1;stroke-miterlimit:10;" d="M 170.079 143.833937 L 176.032125 140.755812 L 164.129781 135.396437 L 176.032125 130.040969 L 164.129781 124.681594 L 176.032125 119.326125 L 164.129781 113.96675 L 170.079 111.287062 " transform="matrix(1,0,0,-1,34.671,185.248)"/>
 <g style="fill:rgb(0%,0%,0%);fill-opacity:1;">
-  <use xlink:href="#glyph0-3" x="212.907" y="59.833"/>
+  <use xlink:href="#glyph0-3" x="180.422" y="59.833"/>
 </g>
 <g style="fill:rgb(0%,0%,0%);fill-opacity:1;">
-  <use xlink:href="#glyph2-2" x="223.599" y="61.985"/>
+  <use xlink:href="#glyph2-2" x="191.114" y="61.985"/>
 </g>
 <path style="fill-rule:nonzero;fill:rgb(100%,0%,100%);fill-opacity:1;stroke-width:0.3985;stroke-linecap:butt;stroke-linejoin:miter;stroke:rgb(100%,0%,100%);stroke-opacity:1;stroke-miterlimit:10;" d="M 170.079 100.099562 L 168.098531 100.099562 L 170.079 95.884719 L 172.063375 100.099562 L 170.079 100.099562 " transform="matrix(1,0,0,-1,34.671,185.248)"/>
 <g style="fill:rgb(100%,0%,100%);fill-opacity:1;">
