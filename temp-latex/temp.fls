@@ -26,13 +26,6 @@ INPUT /usr/local/texlive/2020/texmf-dist/tex/latex/base/article.cls
 INPUT /usr/local/texlive/2020/texmf-dist/tex/latex/base/article.cls
 INPUT /usr/local/texlive/2020/texmf-dist/tex/latex/base/size10.clo
 INPUT /usr/local/texlive/2020/texmf-dist/tex/latex/base/size10.clo
-INPUT /usr/local/texlive/2020/texmf-dist/tex/latex/preview/preview.sty
-INPUT /usr/local/texlive/2020/texmf-dist/tex/latex/preview/preview.sty
-INPUT /usr/local/texlive/2020/texmf-dist/tex/generic/luatex85/luatex85.sty
-INPUT /usr/local/texlive/2020/texmf-dist/tex/generic/luatex85/luatex85.sty
-INPUT /usr/local/texlive/2020/texmf-dist/tex/generic/luatex85/luatex85.sty
-INPUT /usr/local/texlive/2020/texmf-dist/tex/latex/preview/prtightpage.def
-INPUT /usr/local/texlive/2020/texmf-dist/tex/latex/preview/prtightpage.def
 INPUT /usr/local/texlive/2020/texmf-dist/tex/latex/graphics/color.sty
 INPUT /usr/local/texlive/2020/texmf-dist/tex/latex/graphics/color.sty
 INPUT /usr/local/texlive/2020/texmf-dist/tex/latex/graphics-cfg/color.cfg
