@@ -1,4 +1,4 @@
-This is pdfTeX, Version 3.14159265-2.6-1.40.21 (TeX Live 2020) (preloaded format=pdflatex 2021.4.2)  21 JUN 2021 11:44
+This is pdfTeX, Version 3.14159265-2.6-1.40.21 (TeX Live 2020) (preloaded format=pdflatex 2021.4.2)  21 JUN 2021 11:45
 entering extended mode
  restricted \write18 enabled.
  file:line:error style messages enabled.
@@ -446,15 +446,15 @@ File: umsb.fd 2013/01/14 v3.01 AMS symbols B
 
 {/usr/local/texlive/2020/texmf-var/fonts/map/pdftex/updmap/pdftex.map}] (/Users/lckyn/Documents/repository/lms-circuitikz/temp-latex/temp.aux) ) 
 Here is how much of TeX's memory you used:
- 25648 strings out of 480608
- 637009 string characters out of 5903631
- 983696 words of memory out of 5000000
- 41225 multiletter control sequences out of 15000+600000
+ 25649 strings out of 480608
+ 637027 string characters out of 5903631
+ 983698 words of memory out of 5000000
+ 41226 multiletter control sequences out of 15000+600000
  534937 words of font info for 35 fonts, out of 8000000 for 9000
  1141 hyphenation exceptions out of 8191
- 60i,7n,71p,468b,846s stack positions out of 5000i,500n,10000p,200000b,80000s
+ 60i,7n,71p,468b,848s stack positions out of 5000i,500n,10000p,200000b,80000s
 </usr/local/texlive/2020/texmf-dist/fonts/type1/public/amsfonts/cm/cmmi10.pfb></usr/local/texlive/2020/texmf-dist/fonts/type1/public/amsfonts/cm/cmmi12.pfb></usr/local/texlive/2020/texmf-dist/fonts/type1/public/amsfonts/cm/cmr10.pfb></usr/local/texlive/2020/texmf-dist/fonts/type1/public/amsfonts/cm/cmr12.pfb></usr/local/texlive/2020/texmf-dist/fonts/type1/public/amsfonts/cm/cmsy10.pfb>
-Output written on /Users/lckyn/Documents/repository/lms-circuitikz/temp-latex/temp.pdf (1 page, 41862 bytes).
+Output written on /Users/lckyn/Documents/repository/lms-circuitikz/temp-latex/temp.pdf (1 page, 41869 bytes).
 PDF statistics:
  31 PDF objects out of 1000 (max. 8388607)
  22 compressed objects within 1 object stream
