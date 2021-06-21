@@ -78,6 +78,7 @@
 
 \begin{document}
 \begin{circuitikz}[american voltages]
+    % grid
     % \foreach \i in {\xMin,...,\xMax} {
     %     \draw [very thin,gray] (\i,\yMin) -- (\i,\yMax)  node [below] at (\i,\yMin) {$\i$};
     % }
@@ -85,7 +86,25 @@
     %     \draw [very thin,gray] (\xMin,\i) -- (\xMax,\i) node [left] at (\xMin,\i) {$\i$};
     % }
 
-    \draw(0,0)  to[short] ++(0,5);
+%    % x
+%    \draw (0,0) to[american current source, l=$I_{S1}$] ++(0,3) ;
+%    \draw (2,0) to[R, l=$R_2$] ++(0,3) ;
+%    \draw (5,0) to[R, l=$R_3$] ++(0,3) ;
+%    \draw (7,3) to[american current source, l_=$I_{S2}$] ++(0,-3) ;
+
+%    % y
+%    \draw (0,0) to[short,-*] ++(2,0) to[short,-*] ++(3,0) to[short] ++(2,0);
+%    \draw[circuitikz/current arrow color=magenta] (0,3) to[short] ++(2,0) to[R,l=$R_1$,f=$\color{magenta}{i}$] ++(3,0) to[short] ++(2,0);
+   
+   
+%    % node
+%    % \draw[circuitikz/current arrow color=magenta](14,0) to[R, l=$R_4$, f_<=$\color{magenta}{i_4}$] ++(0,5);
+%    \draw(2,3) node[circ, color=magenta]{} node[anchor=south west,color=magenta] {$v_1$};
+%    \draw(5,3) node[circ, color=magenta]{} node[anchor=south west,color=magenta] {$v_2$};
+
+
+
+\draw(0,0)  to[short] ++(0,5);
     \draw (0,0) to[american current source,l=$I_{S1}$] ++(0,5);
     \draw (17,0) to[american current source,l=$I_{S3}$] ++(0,5);
     \draw (0,0) to[short,-*] ++(3,0) to[short,-*] ++(3,0) to[short,-*] ++(5,0) to[short,-*] ++(3,0) to[short,-] ++(3,0);
@@ -94,16 +113,18 @@
 
     % find
 
-    \draw[circuitikz/current arrow color=purple](3,0)  to[R, l=$R_1$, f_<=$\color{purple}{i_1}$] ++(0,5);
-    \draw[circuitikz/current arrow color=purple](6,0)  to[R, l=$R_2$, f_<=$\color{purple}{i_2}$] ++(0,5);
-    \draw[circuitikz/current arrow color=purple](11,0) to[R, l=$R_3$, f_<=$\color{purple}{i_3}$] ++(0,5);
-    \draw[circuitikz/current arrow color=purple](14,0) to[R, l=$R_4$, f_<=$\color{purple}{i_4}$] ++(0,5);
-    % \draw(0,3) node[circ, color=purple]{} node[anchor=south west,color=purple] {$v_1$};
+    \draw[circuitikz/current arrow color=magenta](3,0)  to[R, l=$R_1$, f_<=$\color{magenta}{i_1}$] ++(0,5);
+    \draw[circuitikz/current arrow color=magenta](6,0)  to[R, l=$R_2$, f_<=$\color{magenta}{i_2}$] ++(0,5);
+    \draw[circuitikz/current arrow color=magenta](11,0) to[R, l=$R_3$, f_<=$\color{magenta}{i_3}$] ++(0,5);
+    \draw[circuitikz/current arrow color=magenta](14,0) to[R, l=$R_4$, f_<=$\color{magenta}{i_4}$] ++(0,5);
+    % \draw(0,3) node[circ, color=magenta]{} node[anchor=south west,color=magenta] {$v_1$};
+
+
 
 \end{circuitikz}
 
 % \begin{circuitikz}
-%     \draw(0,0) node[circ, color=purple]{} node[anchor=south west,color=purple] {2};
+%     \draw(0,0) node[circ, color=magenta]{} node[anchor=south west,color=magenta] {2};
 % \end{circuitikz}
 
 \end{document}
