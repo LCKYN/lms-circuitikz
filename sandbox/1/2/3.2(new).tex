@@ -1,0 +1,49 @@
+\input{../../preamble.tex}
+
+\begin{document}
+\begin{circuitikz}[american voltages]
+    % grid
+    % \foreach \i in {\xMin,...,\xMax} {
+    %     \draw [very thin,gray] (\i,\yMin) -- (\i,\yMax)  node [below] at (\i,\yMin) {$\i$};
+    % }
+    % \foreach \i in {\yMin,...,\yMax} {
+    %     \draw [very thin,gray] (\xMin,\i) -- (\xMax,\i) node [left] at (\xMin,\i) {$\i$};
+    % }
+
+%    % x
+%    \draw (0,0) to[american current source, l=$I_{S1}$] ++(0,3) ;
+%    \draw (2,0) to[R, l=$R_2$] ++(0,3) ;
+%    \draw (5,0) to[R, l=$R_3$] ++(0,3) ;
+%    \draw (7,3) to[american current source, l_=$I_{S2}$] ++(0,-3) ;
+
+%    % y
+%    \draw (0,0) to[short,-*] ++(2,0) to[short,-*] ++(3,0) to[short] ++(2,0);
+%    \draw[circuitikz/current arrow color=magenta] (0,3) to[short] ++(2,0) to[R,l=$R_1$,f=$\color{magenta}{i}$] ++(3,0) to[short] ++(2,0);
+   
+   
+%    % node
+%    % \draw[circuitikz/current arrow color=magenta](14,0) to[R, l=$R_4$, f_<=$\color{magenta}{i_4}$] ++(0,5);
+%    \draw(2,3) node[circ, color=magenta]{} node[anchor=south west,color=magenta] {$v_1$};
+%    \draw(5,3) node[circ, color=magenta]{} node[anchor=south west,color=magenta] {$v_2$};
+
+
+\draw (-2,4) to[american current source, l=$I_{S1}$, *-*] (2,4) to[R, l_=$R_4$, -] ++(0,-4) to[short, *-*] (0,0) node[ground]{};
+    \draw (0,0) to[short] (-4,0) to[R=\rn{4}] ++(0,4) to[short] (-2,4) to[R,l_=$R_2$,-*] ++(0,-4);
+    \draw (2,0) to[short] (4,0) to[R, l=\rn] (4,4) to[short] ++(-2,0) to[short] ++(0,2) to[R,l_=$R_3$] ++(-4,0) to[short] ++(0,-2);
+    % \node[color=magenta]at (2.35,4.35) (v2){$v_2$};
+    % \node[color=magenta] at (-2.35,4.35) (v1){$v_1$};
+
+    % find
+    % \draw[circuitikz/current arrow color=magenta](14,0) to[R, l=$R_4$, f_<=$\color{magenta}{i_4}$] ++(0,5);
+    \nodev{-2}{3}{1};
+    \nodev{2}{4}{2};
+
+
+
+\end{circuitikz}
+
+% \begin{circuitikz}
+%     \draw(0,0) node[circ, color=magenta]{} node[anchor=south west,color=magenta] {2};
+% \end{circuitikz}
+
+\end{document}
