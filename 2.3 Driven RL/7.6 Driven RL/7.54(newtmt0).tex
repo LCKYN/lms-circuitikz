@@ -2,26 +2,23 @@
 \begin{document}
 \begin{circuitikz}[american,cute inductors]
     %%% vertical %%%
-    \draw(0,0)  to[I,l=\isname{}] ++(0,6);
 
     \draw(3,0)  to[R,l=\rname{1}] ++(0,6);
 
     \draw(6,6)  to[R,l_=\rname{2}] ++(0,-6);
     
-    \draw[circuitikz/current arrow color=magenta](9,6)  to[R,l_=\rname{3}, f>=$\color{magenta}{i_L(\infty)}$] ++(0,-6);
+    \draw[circuitikz/current arrow color=magenta](9,6)  to[R,l_=\rname{3}] ++(0,-3)
+                to[L,l_=\lname{}] ++(0,-3);
 
 
     %%% horizontal %%%
-    \draw(0,0)  to[short,-*] ++(3,0)
-                to[short,-*] ++(3,0)
+    \draw(3,0)  to[short,-*] ++(3,0)
                 to[short] ++(3,0);
 
-    \draw(0,6)  to[short,-*] ++(3,0)
-                to[short,-*] ++(3,0)
+    \draw(3,6)  to[short,-*] ++(3,0)
                 to[short] ++(3,0);
 
     %%% node %%%
-    % \node[anchor=north east] at(6,2) {$t=0$};
     %%% find %%%
 
 \end{circuitikz}

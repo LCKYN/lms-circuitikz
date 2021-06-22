@@ -8,8 +8,8 @@
 
     \draw(6,6)  to[R,l_=\rname{2}] ++(0,-6);
     
-    \draw(9,6)  to[R,l_=\rname{3}] ++(0,-3)
-                to[I,l_=$i_l(0^-)$] ++(0,-3);
+    \draw[circuitikz/current arrow color=magenta](9,6)  to[R,l_=\rname{3}, f>=$\color{magenta}{i_L(0^+)}$] ++(0,-3);
+    \draw(9,3)  to[I,l_=$i_L(0^-)$] ++(0,-3);
 
 
     %%% horizontal %%%
