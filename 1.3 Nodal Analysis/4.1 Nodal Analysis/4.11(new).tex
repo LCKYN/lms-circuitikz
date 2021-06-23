@@ -1,0 +1,30 @@
+\input{../../preamble.tex}
+\begin{document}
+\begin{circuitikz}[american]
+
+    %%% vertical %%%
+    \draw (0,0) to[R, l=\rname{1}] ++(0,4);
+    \draw (2,0) to[I, l^=\isname{1}] ++(0,4);
+    \draw (6,0) to[R, l=\rname{3}] ++(0,4);
+    \draw (8,0) to[R, l=\rname{4}] ++(0,4);
+    \draw (10,4) to[I, l_=\isname{2}] ++(0,-4);
+
+    %%% horizontal %%%
+    \draw (0,0) to[short,-*] ++(2,0) 
+                to[short,-*] ++(4,0) 
+                to[short,-*] ++(2,0) 
+                to[short,-] ++(2,0);
+    
+    \draw (0,4) to[short] ++(2,0) 
+                to[R, l=\rname{2}] ++(4,0) 
+                to[short,-*] ++(2,0) 
+                to[short,-*] ++(2,0) ;
+
+    %%% find %%%
+    \draw[circuitikz/current arrow color=magenta] (10,4) to[R,l_=$2\Omega$, f>^=$\color{magenta}{i_1}$] ++(4,0);
+    \draw[color=magenta](3,3.9) to[open, v=$v$] ++(2,0);
+    \nodev{2}{4}{1};
+    \nodev{6}{4}{2};
+
+\end{circuitikz}
+\end{document}
