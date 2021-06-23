@@ -1,0 +1,32 @@
+\input{../../preamble.tex}
+\begin{document}
+\begin{circuitikz}[american]
+    %%% vertical %%%
+    \draw (-2,0) to[I, l=\isname{1}] ++(0,3);
+
+    \draw (0,0) to[R, l=\rname{1}] ++(0,3) to[short,-] ++(0,1.5);
+
+    \draw (3,3) to[R, l_=\rname{3}] ++(0,-3);
+
+    \draw (6,0) to[R, l=\rname{4}] ++(0,3) 
+                to[short,-] ++(0,1.5);
+
+    %%% horizontal %%%
+    \draw (-2,0)    to[short,-*] ++(2,0) 
+                    to[short,-*] ++(3,0) node[ground]{} 
+                    to[short] ++(3,0);
+
+    \draw (6,3) to[I,l_=\isname{2}] ++(-3,0) 
+                to[R,l_=$R_2$] ++(-3,0) 
+                to[short] ++(-2,0);
+    
+    \draw (0,4.5) to[american controlled voltage source, l=$2v_{o}$] ++(6,0);
+
+    %%% find %%%
+    \draw(3,2.5) to[open,v^=$v_o$] ++(0,-2);
+    \nodev{0}{3}{1};
+    \nodev{3}{3}{2};
+    \nodev{6}{3}{3};
+
+\end{circuitikz}
+\end{document}
