@@ -1,0 +1,19 @@
+\input{../../preamble.tex}
+\begin{document}
+\begin{circuitikz}[american]
+    %%% vertical %%%
+    \draw[circuitikz/current arrow color=magenta](0,0)  to[V,l=\vsname{1},f<=$\color{magenta}{i_1}$] ++(0,4);
+    \draw[circuitikz/current arrow color=magenta](4,0)  to[R,l=\rname{2} ,f<=$\color{magenta}{i_2}$] ++(0,4);
+    \draw[circuitikz/current arrow color=magenta](8,0)  to[R,l=\rname{3} ,f<=$\color{magenta}{i_3}$] ++(0,4);
+
+    %%% horizontal %%%
+
+    \draw(0,0)  to[short,-*] ++(4,0)
+                to[short] ++(4,0);
+
+    \draw(8,4)  to[V,l_=\vsname{2}] ++(-4,0)
+                to[R,l_=\rname{1}] ++(-4,0);
+    %%% find %%%
+
+\end{circuitikz}
+\end{document}
