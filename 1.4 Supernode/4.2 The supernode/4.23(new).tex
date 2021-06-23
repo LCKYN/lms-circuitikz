@@ -1,0 +1,25 @@
+\input{../../preamble.tex}
+\begin{document}
+\begin{circuitikz}[american]
+    %%% vertical %%%
+    \draw(0,0)  to[R,l=\rname{1},*-] ++(0,4);
+    \draw(0,0)  to[I,l_=\isname{2}] ++(0,-4);
+
+    %%% horizontal %%%
+    \draw(0,0)  to[R,l=\rname{3}] ++(4,0);
+    \draw(0,0)  to[V,l_=\vsname{1}] ++(-4,0);
+
+    \draw(0,4)  to[R,l=\rname{2}] ++(4,-4)
+                to[V,l=\vsname{2}] ++(-4,-4)
+                to[R,l=\rname{4}] ++(-4,4);
+
+    \draw(0,4)  to[I,l_=\isname{1}] ++(-4,-4);
+    %%% find %%%
+    \draw[magenta](0,3)  to[open,v^=$v$] ++(0,-2);
+    \draw(-4,0) node[circ, color=magenta]{} node[anchor=east,color=magenta] {$v_{1}$};
+    \draw(0,4) node[circ, color=magenta]{} node[anchor=south,color=magenta] {$v_{2}$};
+    \draw(4,0) node[circ, color=magenta]{} node[anchor=west,color=magenta] {$v_{3}$};
+    \draw(0,-4) node[circ, color=magenta]{} node[anchor=north,color=magenta] {$v_{4}$};
+
+\end{circuitikz}
+\end{document}
