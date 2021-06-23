@@ -92,3 +92,7 @@
 \newcommand{\nodevs}[3]{
     \draw(#1,#2) node[circ, color=magenta]{} node[anchor=north,color=magenta] {$v_{#3}$};
 }
+
+\newcommand{\loopc}[3]{
+    \draw[thin, <-, >=triangle 45,color=purple] (#1,#2)node{$i_{#3}$}  ++(-70:0.6) arc (-70:160:0.6);
+}
