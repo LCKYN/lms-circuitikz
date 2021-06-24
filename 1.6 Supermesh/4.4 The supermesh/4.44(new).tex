@@ -1,0 +1,34 @@
+\input{../../preamble.tex}
+\begin{document}
+\begin{circuitikz}[american]
+    %%% vertical %%%
+    \draw(0,0)  to[V,l=\vsname{}] ++(0,8);
+
+    \draw(3,0)  to[I,l=\isname{1},-*] ++(0,4)
+                to[R,l=\rname{1}] ++(0,4);
+
+
+    \draw(7,0)  to[R,l=\rname{6},-*] ++(0,4)
+                to[R,l=\rname{5}] ++(0,4);
+
+
+    %%% horizontal %%%
+    \draw(0,0)  to[short,-*] ++(3,0)
+                to[R,l=\rname{4}] ++(4,0);
+
+    \draw(3,4)  to[R,l=\rname{3}] ++(4,0);
+
+    \draw(0,8)  to[short,-*] ++(3,0)
+                to[R,l=\rname{2}] ++(4,0);
+
+    \draw(7,4)  to[short] ++(3,0)
+                to[I,l_=\isname{2}] ++(0,-4)
+                to[short,-*] ++(-3,0);
+
+    %%% find %%%
+    \loopc{1.5}{4}{1};
+    \loopc{5}{6}{2};
+    \loopc{5}{2}{3};
+
+\end{circuitikz}
+\end{document}
