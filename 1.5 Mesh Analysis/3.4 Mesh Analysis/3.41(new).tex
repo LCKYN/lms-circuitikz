@@ -2,11 +2,27 @@
 \begin{document}
 \begin{circuitikz}[american]
     %%% vertical %%%
-    \draw(0,0)  to[V,l=\vsname{1}] ++(0,6);
+    \draw(0,0)  to[R,l=\rname{2}] ++(0,4)
+                to[short] ++(0,2);
+    \draw(4,0)  to[V,l=\vsname{2}] ++(0,2)
+                to[R,l=\rname{4},-*] ++(0,2);
+    \draw(8,0)  to[R,l=\rname{5}] ++(0,4)
+                to[short] ++(0,2);
 
     %%% horizontal %%%
+    \draw(8,0) to[short,-*] ++(-4,0)
+                to[short] ++(-4,0);
+
+    \draw(8,4) to[V,l_=\vsname{1},*-] ++(-4,0)
+                to[R,l_=\rname{3},-*] ++(-4,0);
+
+    \draw(0,6) to[R,l=\rname{1}] ++(8,0);
 
     %%% find %%%
+
+    \loopc{4}{5}{1};
+    \loopc{2}{2}{2};
+    \loopc{6}{2}{3};
 
 \end{circuitikz}
 \end{document}
