@@ -1,6 +1,7 @@
 \input{../../preamble.tex}
 \begin{document}
 \begin{circuitikz}[american,cute inductors]
+    \input{../../preamble2.tex}
     %%% vertical %%%
     \draw(0,0) to[I,l=\isname{}] ++(0,3);
     \draw(2,0) to[R,l=\rname{1}] ++(0,3);
@@ -14,7 +15,7 @@
 
     \draw(0,3) 
         to[short,-*] ++(2,0)
-        to[opening switch,bipoles/length=4cm] ++(3,0)
+        to[cogsw] ++(3,0)
         to[short,*-] ++(2,0);
 
 

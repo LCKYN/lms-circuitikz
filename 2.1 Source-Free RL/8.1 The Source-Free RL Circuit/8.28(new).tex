@@ -1,6 +1,7 @@
 \input{../../preamble.tex}
 \begin{document}
 \begin{circuitikz}[american,cute inductors]
+    \input{../../preamble2.tex}
     %%% vertical %%%
     \draw(0,0) 
         to[V,l=\vsname{}] ++(0,4);
@@ -18,7 +19,7 @@
         
     \draw(0,4)
         to[R,l=\rname{1}] ++(2,0)
-        to[opening switch,bipoles/length=4cm] ++(2,0)
+        to[cogsw] ++(2,0)
         to[L,l=\lname{},*-] ++(4,0);
 
     %%% find %%%

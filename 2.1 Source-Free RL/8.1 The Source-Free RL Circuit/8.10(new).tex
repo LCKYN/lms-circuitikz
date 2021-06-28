@@ -1,12 +1,13 @@
 \input{../../preamble.tex}
 \begin{document}
 \begin{circuitikz}[american,cute inductors]
+    \input{../../preamble2.tex}
     %%% vertical %%%
     \draw(0,0) 
         to[V,l=\vsname{}] ++(0,4);
 
     \draw(4,0) 
-        to[closing switch,bipoles/length=4cm] ++(0,4);
+        to[ccgsw] ++(0,4);
 
     \draw(8,4) 
         to[L,l_=\lname{}] ++(0,-4);
