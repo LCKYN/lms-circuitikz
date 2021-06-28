@@ -2,7 +2,7 @@
 \begin{document}
 \begin{circuitikz}[american]
     %%% vertical %%%
-    \draw(0,0)  to[V,l=\vsname{1}] ++(0,6);
+    \draw(0,0)  to[V,l=\vsname{}] ++(0,6);
 
     %%% horizontal %%%
     \draw(0,6)  to[R,l=\rname{1},-*] ++(6,0);
@@ -17,6 +17,9 @@
     \draw(3,3)  to[R,l=\rname{4}] ++(6,0);
 
     %%% find %%%
+    \loopc{1.5}{3}{1};
+    \loopc{6}{4.5}{2};
+    \loopc{6}{1.5}{3};
 
 \end{circuitikz}
 \end{document}
