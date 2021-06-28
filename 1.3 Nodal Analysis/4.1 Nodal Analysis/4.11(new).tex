@@ -11,8 +11,8 @@
 
     %%% horizontal %%%
     \draw (0,0) to[short,-*] ++(2,0) 
-                to[short,-*] ++(4,0) 
-                to[short,-*] ++(2,0) 
+                to[short,-*] ++(4,0) node[ground]{}
+                to[short,-*] ++(2,0)  
                 to[short,-] ++(2,0);
     
     \draw (0,4) to[short] ++(2,0) 
@@ -21,8 +21,8 @@
                 to[short,-*] ++(2,0) ;
 
     %%% find %%%
-    \draw[circuitikz/current arrow color=magenta] (10,4) to[R,l_=$2\Omega$, f>^=$\color{magenta}{i_1}$] ++(4,0);
-    \draw[color=magenta](3,3.9) to[open, v=$v$] ++(2,0);
+    \draw(10,4) to[R,l_=$2\Omega$] ++(4,0);
+    \draw(3,3.9) to[open] ++(2,0);
     \nodev{2}{4}{1};
     \nodev{6}{4}{2};
 
