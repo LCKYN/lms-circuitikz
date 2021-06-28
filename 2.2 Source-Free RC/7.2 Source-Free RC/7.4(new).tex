@@ -1,0 +1,35 @@
+\input{../../preamble.tex}
+\begin{document}
+\begin{circuitikz}[american,cute inductors]
+    \input{../../preamble2.tex}
+    \draw (4,4) node[cute spdt down arrow,rotate=180](S1){};
+
+    %%% vertical %%%
+    \draw(s) 
+        to[V,l=\vsname{}] (0,0 |- S1.out 2);
+
+    \draw(S1-out 1.n |- 4,0)
+        to[R,l=\rname{2}] (S1-out 1.n);
+
+    \draw(8,0) 
+        to[C,l=\cname{}] (8,0 |- S1.in);
+
+    %%% horizontal %%%
+    \draw(s)
+        to[short,-*] ++(S1-out 2.n |- s)
+        to[short] (8,0);
+
+    \draw(s |- S1.out 2)
+        to[R,l=\rname{1}] (S1.out 2);
+    
+    \draw(S1.in)
+        to[short] (8,0 |- S1.in);
+
+
+    %%% find %%%
+    \node at (4.5,4.8)[]{$t=0$};
+    \draw[magenta](8.2,1)
+        to[open, v>=$v_c(t)$] ++(0,2);
+
+\end{circuitikz}
+\end{document}
