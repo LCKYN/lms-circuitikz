@@ -126,13 +126,10 @@
   <use xlink:href="#glyph4-1" x="136.406" y="76.744"/>
 </g>
 <g style="fill:rgb(0%,0%,0%);fill-opacity:1;">
-  <use xlink:href="#glyph0-3" x="123.708" y="64.305"/>
+  <use xlink:href="#glyph0-3" x="126.199" y="64.305"/>
 </g>
 <g style="fill:rgb(0%,0%,0%);fill-opacity:1;">
-  <use xlink:href="#glyph1-1" x="131.897" y="66.457"/>
-</g>
-<g style="fill:rgb(0%,0%,0%);fill-opacity:1;">
-  <use xlink:href="#glyph2-1" x="138.58" y="66.457"/>
+  <use xlink:href="#glyph1-1" x="134.388" y="66.457"/>
 </g>
 <path style="fill:none;stroke-width:0.3985;stroke-linecap:butt;stroke-linejoin:miter;stroke:rgb(0%,0%,0%);stroke-opacity:1;stroke-miterlimit:10;" d="M 56.692281 141.732219 L 56.8915 141.732219 M 56.692281 141.732219 L 125.86025 141.732219 M 157.606344 141.732219 L 226.774313 141.732219 M 226.575094 141.732219 L 226.774313 141.732219 " transform="matrix(1,0,0,-1,34.671,165.658)"/>
 <path style="fill:none;stroke-width:0.797;stroke-linecap:butt;stroke-linejoin:bevel;stroke:rgb(0%,0%,0%);stroke-opacity:1;stroke-miterlimit:10;" d="M 125.461813 141.732219 L 128.539938 147.685344 L 133.895406 135.783 L 139.254781 147.685344 L 144.61025 135.783 L 149.969625 147.685344 L 155.329 135.783 L 158.008688 141.732219 " transform="matrix(1,0,0,-1,34.671,165.658)"/>
