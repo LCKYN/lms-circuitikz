@@ -1,0 +1,30 @@
+\input{../../preamble.tex}
+\begin{document}
+\begin{circuitikz}[american,cute inductors]
+    %%% vertical %%%
+    \draw(0,0) to[I,l=\isname{}] ++(0,3);
+    \draw(2,0) to[R,l=\rname{1}] ++(0,3);
+    \draw(5,0) to[R,l=\rname{2}] ++(0,3);
+
+    %%% horizontal %%%
+    \draw(0,0) 
+        to[short,-*] ++(2,0)
+        to[short,-*] ++(3,0)
+        to[short] ++(2,0);
+
+    \draw(0,3) 
+        to[short,-*] ++(2,0)
+        to[opening switch,bipoles/length=4cm] ++(3,0)
+        to[short,*-] ++(2,0);
+
+
+    %%% find %%%
+    \draw[circuitikz/current arrow color=magenta](7,3) 
+        to[L,l=\lname{},f>^=$\color{magenta}{i_L}$] ++(0,-3);
+
+    \draw[magenta](2,0.5) to[open, v>=$v$] ++(0,2);
+    \node at (3.5,2.7)[]{$t=0$};
+        
+
+\end{circuitikz}
+\end{document}
