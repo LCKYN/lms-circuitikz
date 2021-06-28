@@ -10,11 +10,12 @@
 
     %%% horizontal %%%
     \draw(0,0)  to[short,-*] ++(2,0) 
-                to[short,-*] ++(4,0) 
+                to[short,-*] ++(2,0) node[ground]{}
+                to[short,-*] ++(2,0)
                 to[short] ++(2,0);
     
-    \draw[circuitikz/current arrow color=magenta] (0,4) to[short] ++(2,0) 
-                to[R,l=\rname{1},f=$\color{magenta}{i}$] ++(4,0) 
+    \draw (0,4) to[short] ++(2,0) 
+                to[R,l=\rname{1}] ++(4,0) 
                 to[short] ++(2,0);
     %%% find %%%
     \nodev{2}{4}{1};
