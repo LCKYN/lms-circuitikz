@@ -5,7 +5,7 @@
     \draw(0,0)  to[R,l=\rname{4}] ++(0,4)
                 to[R,l=\rname{1}] ++(0,4);
 
-    \draw(4,0)  to[I,l=\isname{1}] ++(0,4)
+    \draw(4,0)  to[I,l=\isname{}] ++(0,4)
                 to[R,l=\rname{2}] ++(0,4);
 
     \draw(8,0)  to[V,l=\vsname{2}] ++(0,8);
@@ -18,5 +18,8 @@
     \draw(8,8)  to[short,-*] ++(-4,0)
                 to[V,l_=\vsname{1}] ++(-4,0);
     %%% find %%%
+    \loopc{2}{6}{1};
+    \loopc{6}{4}{2};
+    \loopc{2}{2}{3};
 \end{circuitikz}
 \end{document}
