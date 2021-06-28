@@ -1,0 +1,21 @@
+\input{../../preamble.tex}
+\begin{document}
+\begin{circuitikz}[american]
+    %%% vertical %%%
+    % \draw(0,0) to[short] ++(0,8);
+    \draw(0,0)  to[R,l=\rname{3}] ++(-4,4)
+                to[R,l=\rname{2}] ++(4,4)
+                to[V,l=$5\mathrm{V}$] ++(4,-4)
+                to[R,l=\rname{4}] ++(-4,-4);
+    \draw(4,4)  to[american controlled current source, l=$1.8v_3$] ++(-8,0);
+
+    %%% horizontal %%%
+
+    %%% find %%%
+    \loopc{0}{2}{2};
+    \loopc{0}{6}{3};
+
+    \draw[color=magenta](3,3) to[open,v=$v_3$] ++(-2,-2);
+
+\end{circuitikz}
+\end{document}
