@@ -12,10 +12,12 @@
     \draw(0,0)  to[R,l=\rname{1},-*] ++(4,0)
                 to[short] ++(4,0);
 
-    \draw(0,4)  to[american controlled voltage source,l=$2i_1$,-*] ++(4,0)
+    \draw(0,4)  to[american controlled voltage source,l=$2i_x$,-*] ++(4,0)
                 to[R,l=\rname{3}] ++(4,0);
 
     %%% find %%%
-    \draw[circuitikz/current arrow color=magenta] (4,0) to[short,f^<=$\color{magenta}{i_1}$] ++(4,0);
+    \draw[circuitikz/current arrow color=magenta] (4,0) to[short,f^<=$\color{magenta}{i_x}$] ++(4,0);
+    \loopc{2}{2}{1};
+    \loopc{6}{2}{2};
 \end{circuitikz}
 \end{document}
