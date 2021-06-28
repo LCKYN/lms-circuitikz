@@ -2,7 +2,7 @@
 \begin{document}
 \begin{circuitikz}[american]
     %%% vertical %%%
-    \draw (-1,0) to[I, l=\isname{1}] ++(0,8);
+    \draw (-1,0) to[I, l=\isname{}] ++(0,8);
 
     \draw (2,0) to[american controlled current source, l_=$v_{x}$, *-] ++(0,4) 
                 to[R,l=\rname{1}] ++(0,4);
@@ -15,7 +15,7 @@
     \draw(2,4) to[R,l=\rname{2}] ++(4,0);
 
     %%% find %%%
-    \draw[circuitikz/current arrow color=magenta] (6,8) to[R,l_=\rname{3},f_>=$\color{magenta}{i_1}$,-*] ++(0,-4);
+    \draw (6,8) to[R,l_=\rname{3},-*] ++(0,-4);
 
     \draw[color=magenta](3,4) to[open,v>=$v_x$] ++(2,0);
 
