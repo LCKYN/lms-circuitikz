@@ -1,0 +1,37 @@
+\input{../../preamble.tex}
+\begin{document}
+\begin{circuitikz}[american,cute inductors]
+    \input{../../preamble2.tex}
+
+    %%% vertical %%%
+    \draw(s)
+        to[C,l=\cname{}] ++(0,5);
+
+    \draw(5,0)
+        to[V,l=\vsname{}] ++(0,2.5)
+        to[cogsw] ++(0,2.5);
+        
+    \draw(10,0)
+        to[R,l=\rname{3}] ++(0,5);
+
+    \draw(12,0)
+        to[R,l=\rname{4}] ++(0,5);
+
+    %%% horizontal %%%
+    \draw(s)
+        to[short,-*] ++(5,0)
+        to[R,l=\rname{5}] ++(5,0)
+        to[short,*-] ++(2,0);
+
+    \draw(0,5)
+        to[R,l=\rname{1},-*] ++(5,0)
+        to[R,l=\rname{2}] ++(5,0)
+        to[short,*-] ++(2,0);
+
+    %%% find %%%
+    \node at(5.7,4) []{$t=0$};
+    \draw[magenta](12.2,1.5)
+        to[open,v>=$v_r(t)$] ++(0,2);
+
+\end{circuitikz}
+\end{document}
