@@ -1,0 +1,31 @@
+\input{../../preamble.tex}
+\begin{document}
+\begin{circuitikz}[american,cute inductors]
+
+    \input{../../preamble2.tex}
+
+    %%% vertical %%%
+    \draw(0,0)  
+        to[V,l=\vsname{}] ++(0,4);
+
+    \draw(4,0)  
+        to[R,l=\rname{2}] ++(0,4);
+
+    \draw(6,4)  
+        to[C,l_=\cname{}] ++(0,-4);
+
+
+    %%% horizontal %%%
+    \draw(0,4)
+        to[R,l=\rname{1},-*] ++(4,0)
+        to[short] ++(2,0);
+
+    \draw(s)
+        to[short,-*] ++(4,0)
+        to[short] ++(2,0);
+    %%% find %%%
+    % \node at(7.2,1.5) []{$t=0$};
+    \draw[magenta](6.2,3)  
+        to[open,v^=$v_c(t)$] ++(0,-2);
+\end{circuitikz}
+\end{document}
