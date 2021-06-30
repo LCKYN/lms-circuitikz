@@ -1,0 +1,27 @@
+\input{../../preamble.tex}
+\begin{document}
+\begin{circuitikz}[american,cute inductors]
+
+    \input{../../preamble2.tex}
+
+    %%% vertical %%%
+    \draw(0,0)  
+        to[V,l=\vsname{}] ++(0,4);
+
+    \draw(4,4)  
+        to[L,l_=\lname{}] ++(0,-4);
+
+
+    %%% horizontal %%%
+    \draw(0,4)
+        to[R,l=\rname{1}] ++(4,0);
+
+    \draw(s)
+        to[short] ++(4,0);
+    %%% find %%%
+    \draw[circuitikz/current arrow color=magenta](0,4)
+    to[open,f>^=$\color{magenta}{i_l(t)}$] ++(2,0);
+    % \draw[magenta](6,3)  
+    %     to[open,v^=$v_L$] ++(0,-2);
+\end{circuitikz}
+\end{document}
