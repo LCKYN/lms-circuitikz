@@ -1,0 +1,55 @@
+\input{../../preamble.tex}
+\begin{document}
+\begin{circuitikz}[american,cute inductors]
+    \input{../../preamble2.tex}
+    %%% vertical %%%
+    \draw(0,0)
+        to[I,l=\isname{}] ++(0,6);
+
+    \draw(3,0)
+        to[C,l=\cname{}] ++(0,6);
+
+    \draw(6,6)
+        to[R,l_=\rname{1}] ++(0,-3)
+        to[L,l_=\lname{}] ++(0,-3);
+
+    \draw(7.5,6)
+        to[ccgsw] ++(0,-3);
+
+    \draw(9,0)
+        to[R,l=\rname{2}] ++(0,6);
+
+    %%% horizontal %%%
+    \draw(0,0)
+        to[short,-*] ++(3,0)
+        to[short,-*] ++(3,0)
+        to[short] ++(3,0);
+
+    \draw(0,6)
+        to[short,-*] ++(3,0)
+        to[short,-*] ++(3,0)
+        to[short,-*] ++(1.5,0)
+        to[short] ++(1.5,0);
+
+    \draw(6,3)
+        to[short,*-] ++(1.5,0);
+
+    %%% find %%%
+    \node at(8.25,5.1) []{$t=0$};
+    \draw[magenta](6.2,0.5)
+        to[open,v>=$v_l(t)$] ++(0,2);
+
+    \draw[magenta](3.2,2)
+        to[open,v>=$v_c(t)$] ++(0,2);
+
+    \draw[circuitikz/current arrow color=magenta](6,2.8)
+        to[open,f>_=$\color{magenta}{i_l(t)}$] ++(0,-2);
+
+    \draw[circuitikz/current arrow color=magenta](3,5.8)
+        to[open,f>_=$\color{magenta}{i_c(t)}$] ++(0,-2);
+
+    \draw[circuitikz/current arrow color=magenta](9,2)
+        to[open,f>^=$\color{magenta}{i_r(t)}$] ++(0,-2);
+
+\end{circuitikz}
+\end{document}
