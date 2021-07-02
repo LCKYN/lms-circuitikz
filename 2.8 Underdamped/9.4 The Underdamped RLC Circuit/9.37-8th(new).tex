@@ -1,0 +1,57 @@
+\input{../../preamble.tex}
+\begin{document}
+\begin{circuitikz}[american,cute inductors]
+    \input{../../preamble2.tex}
+
+    \draw (6,4) node[cute spdt up arrow,rotate=90](s1){};
+
+    %%% vertical %%%
+    \draw(s)
+        to[V,l=\vsname{1}] ++(0,4 |- s1.in)
+        to[short] (0,4 |- s1-out 2.n);
+
+    \draw(4,0)
+        to[R,l=\rname{2}] ++(0,4 |- s1.in)
+        to[short] (4,4 |- s1-out 2.n);
+
+    \draw(s1.in)
+        to[C,l_=\cname{}] (s1.in |- 0,0);
+
+    \draw(8,4 |- s1-out 2.n)
+        to[short] (8,4)
+        to[L,l_=\lname{}](8,0);
+
+    \draw(12,0)
+        to[R,l=\rname{3}] ++(0,4 |- s1.in)
+        to[short] (12,4 |- s1-out 2.n);
+
+    % \draw(4,0)
+    %     to[C,l=\cname{}] ++(0,4 |- s1.in);
+
+    % \draw(8,0)
+    %     to[V,l=\vsname{}] ++(0,4 |- s1.in)
+    %     to[short] (8,4 |- s1-out 2.n);
+
+    %%% horizontal %%%
+    \draw(s)
+        to[short,-*] ++(4,0)
+        to[short,-*] ++(2,0)
+        to[short,-*] ++(2,0)
+        to[short] ++(4,0);
+
+    \draw(0,4 |- s1-out 2.n)
+        to[R,l=\rname{1}] ++(4,0)
+        to[short] ( s1-out 1.n);
+
+    \draw(12,4 |- s1-out 2.n)
+        to[V,l_=\vsname{2}] (8,4 |- s1-out 2.n)
+        to[short] (s1-out 2.n);
+
+
+    %%% find %%%
+    \node at(6,4.8) []{$t=0$};
+    \draw[magenta](6.2,0.9)
+        to[open,v>=$v_c(t)$] ++(0,2);
+
+\end{circuitikz}
+\end{document}
