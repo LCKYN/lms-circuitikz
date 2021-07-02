@@ -1,0 +1,44 @@
+\input{../../preamble.tex}
+\begin{document}
+\begin{circuitikz}[american,cute inductors]
+    \input{../../preamble2.tex}
+
+    \node[cute spdt down arrow] at(4.5,4) (s1){};
+
+    %%% vertical %%%
+    \draw(0,0)
+        to[short] ++(0,4);
+
+    \draw(9,0)
+        to[short] ++(0,4)
+        to[V,l=\vsname{}] ++(0,3);
+    %%% horizontal %%%
+    \draw(9,0)
+        to[I,l_=\isname{}] ++(-9,0);
+
+    \draw(0,2)
+        to[R,l=\rname{3},*-*] ++(9,0);
+
+    \draw(0,4)
+        to[L,l=\lname{}] ++(4,0) 
+        to[short] (s1.in);
+
+    \draw(s1.out 2)
+        to[R,l=\rname{2},-*] (9,0 |- s1.out 2);
+
+    \draw(s1-out 1.n)
+        to[short] (s1-out 1.n |- 0,7)
+        to[C,l=\cname{}] ++(2,0)
+        to[R,l=\rname{}] (9,7);
+
+    %%% find %%%
+    \node at(4,4.8) []{$t=0$};
+
+    % \draw[magenta](6.2,1)
+    %     to[open,v>=$v_c(t)$] ++(0,2);
+
+    \draw[circuitikz/current arrow color=magenta](0.5,4)
+        to[open,f>^=$\color{magenta}{i_l(t)}$] ++(2,0);
+
+\end{circuitikz}
+\end{document}
