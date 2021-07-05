@@ -1,5 +1,5 @@
 <?xml version="1.0" encoding="UTF-8"?>
-<svg xmlns="http://www.w3.org/2000/svg" xmlns:xlink="http://www.w3.org/1999/xlink" width="270.494pt" height="258.266pt" viewBox="0 0 270.494 258.266" version="1.1">
+<svg xmlns="http://www.w3.org/2000/svg" xmlns:xlink="http://www.w3.org/1999/xlink" width="256.321pt" height="258.266pt" viewBox="0 0 256.321 258.266" version="1.1">
 <defs>
 <g>
 <symbol overflow="visible" id="glyph0-0">
@@ -113,16 +113,16 @@
 <path style="fill:none;stroke-width:0.797;stroke-linecap:butt;stroke-linejoin:miter;stroke:rgb(0%,0%,0%);stroke-opacity:1;stroke-miterlimit:10;" d="M 93.261063 -11.9065 L 105.167313 -11.9065 M 95.245438 -13.890875 L 103.182938 -13.890875 M 96.733719 -15.87525 L 101.694656 -15.87525 " transform="matrix(1,0,0,-1,39.653,232.031)"/>
 <path style="fill-rule:nonzero;fill:rgb(100%,100%,100%);fill-opacity:1;stroke-width:0.3985;stroke-linecap:butt;stroke-linejoin:miter;stroke:rgb(0%,0%,0%);stroke-opacity:1;stroke-miterlimit:10;" d="M 200.014969 -0.00025 C 200.014969 0.87475 199.304031 1.585687 198.429031 1.585687 C 197.550125 1.585687 196.839188 0.87475 196.839188 -0.00025 C 196.839188 -0.87525 197.550125 -1.586188 198.429031 -1.586188 C 199.304031 -1.586188 200.014969 -0.87525 200.014969 -0.00025 Z M 200.014969 -0.00025 " transform="matrix(1,0,0,-1,39.653,232.031)"/>
 <g style="fill:rgb(100%,0%,100%);fill-opacity:1;">
-  <use xlink:href="#glyph5-1" x="241.452" y="108.852"/>
+  <use xlink:href="#glyph5-1" x="227.279" y="108.852"/>
 </g>
 <g style="fill:rgb(100%,0%,100%);fill-opacity:1;">
-  <use xlink:href="#glyph6-1" x="241.452" y="220.651"/>
+  <use xlink:href="#glyph6-1" x="227.279" y="220.651"/>
 </g>
 <g style="fill:rgb(100%,0%,100%);fill-opacity:1;">
-  <use xlink:href="#glyph2-4" x="246.421" y="163.177"/>
+  <use xlink:href="#glyph2-4" x="232.248" y="163.177"/>
 </g>
 <g style="fill:rgb(100%,0%,100%);fill-opacity:1;">
-  <use xlink:href="#glyph3-2" x="253.212" y="165.329"/>
+  <use xlink:href="#glyph3-2" x="239.039" y="165.329"/>
 </g>
 </g>
 </svg>
