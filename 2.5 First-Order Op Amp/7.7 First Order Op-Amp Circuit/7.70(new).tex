@@ -22,11 +22,15 @@
     %     to[C,l_=\cname{}] (8,0)
     %     ;
 
+    \draw(6,0 |- oa.out)
+        to[short,-o] ++(1,0);
+
     \draw(2,0) node[ground]{}
         to[short] (0,0);
 
     %%% find %%%
     \node at(1.5,5.1) []{$t=0$};
+    \node at(7.1,5.3) []{$v_o$};
     % \draw[magenta](8.2,3.5)  
     %     to[open,v^=$v_o$] ++(0,-2);
 \end{circuitikz}
