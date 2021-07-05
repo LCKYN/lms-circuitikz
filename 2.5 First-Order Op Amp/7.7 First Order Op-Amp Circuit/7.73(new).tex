@@ -2,7 +2,7 @@
 \begin{document}
 \begin{circuitikz}[american,cute inductors]
     \input{../../preamble2.tex}
-    \draw (5,5) node[op amp,noinv input down](oa){};
+    \draw (5,3) node[op amp,noinv input down](oa){};
 
 
     \draw(0,0) 
@@ -26,10 +26,10 @@
 
     %%% find %%%
     % \node at(1.5,5.1) []{$t=0$};
-    \draw[magenta](7,5)  
-        to[open,v^=$v_o$] ++(0,-5);
+    \draw[magenta](7,3)  
+        to[open,v^=$v_o$] ++(0,-3);
 
-    \draw[magenta](2,5.2)  
+    \draw[magenta](2,3.2)  
         to[open,v_=$v_c$] ++(2,0);
 \end{circuitikz}
 \end{document}
