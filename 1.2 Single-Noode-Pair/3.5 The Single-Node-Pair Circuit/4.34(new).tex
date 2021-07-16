@@ -1,0 +1,34 @@
+\input{../../preamble.tex}
+\begin{document}
+\begin{circuitikz}[american,cute inductors]
+    \input{../../preamble2.tex}
+
+    \draw(0,0) node[anchor=north east]{$ref$}
+        to[short,*-*] ++(-4,0)
+        to[I,l_=\isname{1}] ++(0,-4)
+        to[short] ++(4,0)
+        to[R,l=\rname{3},*-*] ++(0,4)
+        to[R,l=\rname{2},*-*] ++(4,0)
+        to[short] ++(0,-4)
+        to[short] ++(-4,0) ++(4,4)
+        to[short] ++(0,4)
+        to[short] ++(-4,0)
+        to[I,l_=\isname{2},*-*] ++(0,-4) ++(0,4)
+        to[short] ++(-4,0)
+        to[R,l_=\rname{1}] ++(0,-4);
+
+    %%% find %%%
+    % node[anchor=west]{$a$}
+    % \node at(3.7,4.6) []{$t=0$};
+    % \node at(9,6) []{$v_o$};
+    
+    % \draw[magenta](-4.7,3)  
+        % to[open,v^=$v$] ++(0,-2);
+
+    %     \draw[magenta](-4.7,4)  
+    %     to[open,v^=$v$] ++(0,-4);
+
+    % \draw[circuitikz/current arrow color=magenta](0,4)
+    % to[open,f>_=$\color{magenta}{i_x}$] ++(-2,0);
+\end{circuitikz}
+\end{document}
