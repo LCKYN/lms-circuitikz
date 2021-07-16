@@ -1,0 +1,28 @@
+\input{../../preamble.tex}
+\begin{document}
+\begin{circuitikz}[american,cute inductors]
+    \input{../../preamble2.tex}
+
+    \draw(0,0)
+        to[R,l_=\rname{3}] ++(-4,0)
+        to[V,l=\vsname{1}] ++(0,3)
+        to[R,l=\rname{1}] ++(0,3)
+        to[R,l=\rname{2}] ++(4,0) (0,0)
+        to[V,l=\vsname{2}] ++(0,3)
+        to[american controlled voltage source,l=$4v_1$] ++(0,3);
+
+    %%% find %%%
+    % node[anchor=west]{$a$}
+    % \node at(3.7,4.6) []{$t=0$};
+    % \node at(9,6) []{$v_o$};
+    
+    \draw[magenta](-3,5.8)  
+        to[open,v_=$v_1$] ++(2,0);
+
+    % \draw[magenta](-0.32,4)  
+    %     to[open,v^=$v_o$] ++(0,-4);
+
+    % \draw[circuitikz/current arrow color=magenta](-10,3.9)
+    % to[open,f>^=$\color{magenta}{i_x}$] ++(0,-2);
+\end{circuitikz}
+\end{document}
