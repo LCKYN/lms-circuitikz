@@ -1,0 +1,32 @@
+\input{../../preamble.tex}
+\begin{document}
+\begin{circuitikz}[american,cute inductors]
+    \input{../../preamble2.tex}
+    \draw (5,5) node[op amp,noinv input down](oa){};
+
+
+    \draw(0,0)
+        to[V,l=\vsname{1}] ++(0,0 |- oa.-)
+        to[R,l=\rname{1}] (oa.-)
+        to[short,*-] ++(0,1.5) coordinate(temp)
+        to[R,l=\rname{2}] (oa.out |- temp)
+        to[short,-*] (oa.out) (oa.+ |- 0,0) node[ground] {}
+        to[V,l=\vsname{2}, *-] (oa.+) (0,0)
+        to[short,-o] (8,0) (oa.out)
+        to[short,-o] (8,0 |- oa.out);
+
+    %%% find %%%
+    % node[anchor=west]{$a$}
+    % \node at(3.7,4.6) []{$t=0$};
+    % \node at(9,6) []{$v_o$};
+    
+    % \draw[magenta](8,3.5)  
+    %     to[open,v^=$v_o$] ++(0,-2);
+
+    \draw[magenta](7.5,5)  
+        to[open,v^=$v_o$] ++(0,-5);
+
+    % \draw[circuitikz/current arrow color=magenta](5,5)
+    % to[open,f>^=$\color{magenta}{i_o}$] ++(2,0);
+\end{circuitikz}
+\end{document}
