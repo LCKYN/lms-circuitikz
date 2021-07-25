@@ -106,14 +106,14 @@
 <g style="fill:rgb(0%,0%,0%);fill-opacity:1;">
   <use xlink:href="#glyph0-4" x="283.781" y="36.977"/>
 </g>
-<path style="fill:none;stroke-width:0.3985;stroke-linecap:butt;stroke-linejoin:miter;stroke:rgb(0%,0%,0%);stroke-opacity:1;stroke-miterlimit:10;" d="M -170.081312 102.048437 L -170.081312 79.653906 " transform="matrix(1,0,0,-1,280.261,147.275)"/>
-<path style="fill:none;stroke-width:0.3985;stroke-linecap:butt;stroke-linejoin:miter;stroke:rgb(100%,0%,100%);stroke-opacity:1;stroke-miterlimit:10;" d="M -162.143812 100.771094 L -162.143812 80.93125 " transform="matrix(1,0,0,-1,280.261,147.275)"/>
-<path style="fill-rule:nonzero;fill:rgb(100%,0%,100%);fill-opacity:1;stroke-width:0.3985;stroke-linecap:butt;stroke-linejoin:miter;stroke:rgb(100%,0%,100%);stroke-opacity:1;stroke-miterlimit:10;" d="M -162.143812 85.146094 L -164.128187 85.146094 L -162.143812 80.93125 L -160.159437 85.146094 L -162.143812 85.146094 " transform="matrix(1,0,0,-1,280.261,147.275)"/>
+<path style="fill:none;stroke-width:0.3985;stroke-linecap:butt;stroke-linejoin:miter;stroke:rgb(0%,0%,0%);stroke-opacity:1;stroke-miterlimit:10;" d="M -113.386 102.048437 L -113.386 79.653906 " transform="matrix(1,0,0,-1,280.261,147.275)"/>
+<path style="fill:none;stroke-width:0.3985;stroke-linecap:butt;stroke-linejoin:miter;stroke:rgb(100%,0%,100%);stroke-opacity:1;stroke-miterlimit:10;" d="M -105.4485 100.771094 L -105.4485 80.93125 " transform="matrix(1,0,0,-1,280.261,147.275)"/>
+<path style="fill-rule:nonzero;fill:rgb(100%,0%,100%);fill-opacity:1;stroke-width:0.3985;stroke-linecap:butt;stroke-linejoin:miter;stroke:rgb(100%,0%,100%);stroke-opacity:1;stroke-miterlimit:10;" d="M -105.4485 85.146094 L -107.432875 85.146094 L -105.4485 80.93125 L -103.464125 85.146094 L -105.4485 85.146094 " transform="matrix(1,0,0,-1,280.261,147.275)"/>
 <g style="fill:rgb(100%,0%,100%);fill-opacity:1;">
-  <use xlink:href="#glyph0-2" x="121.639" y="60.051"/>
+  <use xlink:href="#glyph0-2" x="178.332" y="60.051"/>
 </g>
 <g style="fill:rgb(100%,0%,100%);fill-opacity:1;">
-  <use xlink:href="#glyph4-1" x="126.431" y="62.203"/>
+  <use xlink:href="#glyph4-1" x="183.124" y="62.203"/>
 </g>
 </g>
 </svg>
