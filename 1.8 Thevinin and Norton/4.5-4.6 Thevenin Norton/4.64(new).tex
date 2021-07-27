@@ -3,13 +3,14 @@
 \begin{circuitikz}[american,cute inductors]
     \input{../../preamble2.tex}
 
-    \draw(0,0) node[anchor=west]{$b$}
-        to[short,o-] ++(-8,0)
+    \draw(0,0)
+        to[short] ++(-8,0)
         to[american controlled voltage source,l=$10i_x$] ++(0,4) 
         to[R,l=\rname{1}] ++(4,0) ++(0,-4) 
         to[R,l=\rname{3}] ++(0,4)
         to[R,l=\rname{2}] ++(4,0)
-        to[short,-o] ++(0,0) node[anchor=west]{$a$};
+        to[short] ++(0,0)
+        to[R,l_=\rname{L}] (0,0);
 
     %%% find %%%
     % node[anchor=west]{$a$}
