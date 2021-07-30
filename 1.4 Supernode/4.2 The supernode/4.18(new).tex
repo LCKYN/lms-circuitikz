@@ -1,11 +1,36 @@
 \input{../../preamble.tex}
 \begin{document}
-\begin{circuitikz}[american]
-    %%% vertical %%%
+\begin{circuitikz}[american,cute inductors]
+    \input{../../preamble2.tex}
 
-    %%% horizontal %%%
+    \draw(0,0)
+        to[I,l=\isname{2}] ++(0,3) node[magenta, anchor=south east]{$v_1$}
+        to[short] ++(0,3)
+        to[R,l=\rname{2}] ++(6,0)
+        to[short] ++(0,-3) node[magenta, anchor=south east]{$v_3$}
+        to[V,l_=\vsname{}] ++(-3,0) node[magenta, anchor=south east]{$v_2$}
+        to[R,l_=\rname{1},*-*] ++(-3,0)  ++(0,1.5)
+        to[I,l=\isname{1},*-] ++(3,0)
+        to[short] ++(0,-1.5)
+        to[R,l_=\rname{3},*-*] ++(0,-3) node[anchor=north]{$ref$}
+        to[short] ++(3,0) 
+        to[R,l=\rname{4},*-*] ++(0,3)
+        to[short] ++(1.5,0)
+        to[I,l=\isname{3}] ++(0,-3)
+        to[short] (0,0);
 
     %%% find %%%
+    % node[anchor=west]{$a$}
+    % \node at(3.7,4.6) []{$t=0$};
+    % \node at(9,6) []{$v_o$};
+    
+    % \draw[magenta](2,3)  
+    %     to[open,v^=$v_1$] ++(0,-2);
 
+    % \draw[magenta](-0.32,4)  
+    %     to[open,v^=$v_o$] ++(0,-4);
+
+    % \draw[circuitikz/current arrow color=magenta](-10,3.9)
+    % to[open,f>^=$\color{magenta}{i_x}$] ++(0,-2);
 \end{circuitikz}
 \end{document}
