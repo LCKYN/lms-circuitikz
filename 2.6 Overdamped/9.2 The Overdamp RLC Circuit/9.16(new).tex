@@ -27,10 +27,13 @@
     \node at (5.5,2.7)[]{$t=0$};
 
     \draw[magenta](4.2,0.5)
-        to[open, v>=$v_c(t)$] ++(0,2);
+        to[open, v>=$v_C$] ++(0,2);
 
     \draw[circuitikz/current arrow color=magenta](4,3)
-        to[open,f>_=$\color{magenta}{i_c(t)}$] ++(0,-2.4);
+        to[open,f>_=$\color{magenta}{i_C}$] ++(0,-2.4);
+
+    \draw[circuitikz/current arrow color=magenta](7,3)
+        to[open,f>_=$\color{magenta}{i_L}$] ++(0,-2.4);
 
 \end{circuitikz}
 \end{document}
