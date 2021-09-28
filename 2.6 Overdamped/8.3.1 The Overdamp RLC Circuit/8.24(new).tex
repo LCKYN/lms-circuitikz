@@ -42,7 +42,13 @@
     %     to[open, v>=$v_c(t)$] ++(0,2.5);
 
     \draw[circuitikz/current arrow color=magenta](8,4)
-    to[open,f>^=$\color{magenta}{i_l(t)}$] ++(0,-2.4);
+    to[open,f>^=$\color{magenta}{i_L}$] ++(0,-2.4);
+
+    \draw[magenta](3.9,0.5)
+    to[open, v>=$v_C$] ++(0,2.5);
+
+% \draw[circuitikz/current arrow color=magenta](7,4)
+%     to[open,f>^=$\color{magenta}{i_L}$] ++(2.4,0);
 
 \end{circuitikz}
 \end{document}
