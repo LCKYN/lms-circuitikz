@@ -41,10 +41,13 @@
     %%% find %%%
     \node at (4,4.8)[]{$t=0$};
     \draw[magenta](10.2,0.5)
-        to[open, v>=$v_c(t)$] ++(0,2.5);
+        to[open, v>=$v_C$] ++(0,2.5);
 
-    \draw[circuitikz/current arrow color=magenta](8,4)
-    to[open,f>^=$\color{magenta}{i_c(t)}$] ++(2.4,0);
+    \draw[circuitikz/current arrow color=magenta](10,4)
+    to[open,f>^=$\color{magenta}{i_C}$] ++(0,-2.4);
+
+    \draw[circuitikz/current arrow color=magenta](7,4)
+    to[open,f>^=$\color{magenta}{i_L}$] ++(2.4,0);
 
 \end{circuitikz}
 \end{document}
