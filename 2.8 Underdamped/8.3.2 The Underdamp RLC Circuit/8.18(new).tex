@@ -31,9 +31,12 @@
         to[short] ++(2,0);
     %%% find %%%
     \node at(4.5,4.7) []{$t=0$};
-    % \draw[magenta](6.2,3)  
-    %     to[open,v^=$v_c(t)$] ++(0,-2);
-    % \draw[circuitikz/current arrow color=magenta](10,3)
-    % to[open,f>^=$\color{magenta}{i_l(t)}$] ++(0,-2.4);
+
+    \draw[magenta](10.2,3)  
+        to[open,v^=$v_C$] ++(0,-2);
+        
+    \draw[circuitikz/current arrow color=magenta](8,4)
+    to[open,f>^=$\color{magenta}{i_L}$] ++(0,-2.4);
+
 \end{circuitikz}
 \end{document}
