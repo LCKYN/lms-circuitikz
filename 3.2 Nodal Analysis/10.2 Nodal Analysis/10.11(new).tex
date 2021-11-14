@@ -1,0 +1,26 @@
+\input{../../preamble.tex}
+\begin{document}
+\begin{circuitikz}[american]
+
+    %%% vertical %%%
+    \draw(0,0)  to[V,l=\vsname{}] ++(0,4) 
+                to[short] ++(0,2);
+    \draw(4,0)  to[C,l=\cname{2}] ++(0,4);
+    \draw(8,0)  to[I,l=\isname{}] ++(0,4)
+                to[short] ++(0,2);
+    %%% horizontal %%%
+    \draw(0,6)  to[C,l=\cname{1}] ++(4,0)
+                to[L,l=\lname{1}] ++(4,0);
+
+    \draw(0,4)  to[R,l=\rname{1}] ++(4,0)
+                to[L,l=\lname{2}] ++(4,0);
+
+    \draw(0,0)  to[short,-*] ++(4,0) node[ground]{}
+                to[short] ++(4,0);
+
+    %%% find %%%
+    % \nodev{0}{4}{1};
+    \nodev{4}{4}{1};
+    \nodev{8}{4}{2};
+\end{circuitikz}
+\end{document}
